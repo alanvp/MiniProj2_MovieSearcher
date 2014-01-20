@@ -1,0 +1,24 @@
+<%#Search header%>
+<div class="container" style="background-color: lightgray">
+	<div class="row text-center">
+	  <h4>New search</h4>
+  
+	  <form accept-charset="UTF-8" action="/result" method="post">
+	    <label for="movie">Search for:</label>
+	    <input id="movie" name="movie" type="text" />
+	    <input name="commit" type="submit" value="Search" /> 
+	  </form>
+	</div>
+</div>  
+
+<h1>Movie Poster</h1>
+<img ID="final" src= '<%=@url%>' /> 
+<div class = "container text-center">
+	<p><b>Plot:</b> <%= @plot %> </p>
+	<p><b>Year Released:</b> <%= @released %> </p>
+	<p><b>Rated:</b> <%= @rated %> </p>
+	<p><b>Runtime:</b> <%= @runtime %> </p>
+	<p><b>Genre:</b> <%= @genre %> </p>
+	<p><b>Director:</b> <%= @director %> </p>
+	<p><b>Actors:</b> <%= @actors %> </p>
+</div>

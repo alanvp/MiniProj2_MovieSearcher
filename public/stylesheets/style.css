@@ -1,0 +1,10 @@
+#final {
+	display: block;
+	margin: 0 auto;
+	border: 10px solid black;
+	padding: 5px;
+}
+
+li {
+	list-style-type: none;
+}
